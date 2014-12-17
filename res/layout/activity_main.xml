@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.virginia.edu.cs2110_group22.MainActivity" 
+    android:id="@+id/relative">
+
+<com.virginia.edu.cs2110_group22.MovingView 
+    android:id="@+id/moving_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    />
+
+<TextView
+    android:id="@+id/kill_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|right"
+    android:text="0"
+    android:textColor="#FF0000"
+    android:textSize="40sp" />
+
+<ImageButton
+    android:id="@+id/triple_button"
+    android:layout_width="63dp"
+    android:layout_height="60dp"
+    android:layout_gravity="bottom|center_horizontal"
+    android:onClick="tripleShot"
+    android:scaleType="fitXY"
+    android:src="@drawable/tribulletboneyard" />
+
+<ImageButton
+    android:id="@+id/bomb_button"
+    android:layout_width="63dp"
+    android:layout_height="60dp"
+    android:layout_gravity="bottom|center_horizontal"
+    android:layout_marginLeft="70dp"
+    android:onClick="fireBomb"
+    android:scaleType="fitXY"
+    android:src="@drawable/bombboneyard" />
+
+<TextView
+    android:id="@+id/level_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|right"
+    android:textColor="#FF0000"
+    android:textSize="40sp"
+    android:text="" />
+
+</FrameLayout>
